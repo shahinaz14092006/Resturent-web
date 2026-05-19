@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savory Garden Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Savory Garden</a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservations</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Fresh dining, warm evenings</p>
+        <h1>Seasonal flavors served with a beautiful table experience.</h1>
+        <p class="hero-text">Enjoy chef-made dishes, private reservations, and memorable food events at Savory Garden.</p>
+        <div class="hero-actions">
+          <a href="#reservation" class="btn primary">Book a Table</a>
+          <a href="#menu" class="btn secondary">View Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2>Comfort food with a refined touch.</h2>
+      </div>
+      <p>Savory Garden brings together fresh ingredients, relaxed service, and a cozy setting for dinners, family meals, birthdays, and small celebrations.</p>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Our menu</p>
+        <h2>Popular Dishes</h2>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Garden salad bowl">
+          <div>
+            <h3>Garden Harvest Salad</h3>
+            <p>Crisp greens, roasted seeds, citrus dressing, and fresh herbs.</p>
+            <span>$12</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80" alt="Creamy pasta plate">
+          <div>
+            <h3>Truffle Cream Pasta</h3>
+            <p>Handmade pasta, parmesan, wild mushrooms, and truffle cream.</p>
+            <span>$18</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Grilled steak dinner">
+          <div>
+            <h3>Chargrilled Steak</h3>
+            <p>Juicy steak with pepper sauce, vegetables, and garlic potatoes.</p>
+            <span>$26</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80" alt="Dessert cake slice">
+          <div>
+            <h3>Berry Vanilla Cake</h3>
+            <p>Soft vanilla sponge, cream, berry compote, and almond crumble.</p>
+            <span>$9</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+      <div class="reservation-copy">
+        <p class="eyebrow">Reservations</p>
+        <h2>Reserve your table in seconds.</h2>
+        <p>Pick your date, guest count, and preferred time. Our team will confirm your booking shortly.</p>
+      </div>
+
+      <form class="reservation-form">
+        <label>
+          Name
+          <input type="text" placeholder="Your name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          Date
+          <input type="date" required>
+        </label>
+
+        <label>
+          Guests
+          <select required>
+            <option value="">Select guests</option>
+            <option>2 guests</option>
+            <option>3 guests</option>
+            <option>4 guests</option>
+            <option>5+ guests</option>
+          </select>
+        </label>
+
+        <label class="full">
+          Message
+          <textarea rows="4" placeholder="Any special request?"></textarea>
+        </label>
+
+        <button class="btn primary full" type="submit">Send Reservation</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </section>
+
+    <section id="events" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Events</p>
+        <h2>Upcoming Experiences</h2>
+      </div>
+
+      <div class="events-grid">
+        <article class="event-card">
+          <p class="event-date">May 24</p>
+          <h3>Sunday Jazz Dinner</h3>
+          <p>Live jazz, candlelit tables, and a chef-curated three-course dinner.</p>
+        </article>
+
+        <article class="event-card">
+          <p class="event-date">June 08</p>
+          <h3>Farmers Market Brunch</h3>
+          <p>A bright brunch menu featuring local fruits, breads, cheeses, and juices.</p>
+        </article>
+
+        <article class="event-card">
+          <p class="event-date">June 21</p>
+          <h3>Private Celebration Night</h3>
+          <p>Custom table styling and group menus for birthdays and small parties.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <h2>Savory Garden</h2>
+      <p>123 Food Street, City Center</p>
+    </div>
+
+    <div>
+      <p><strong>Open:</strong> Mon-Sun, 11:00 AM - 10:30 PM</p>
+      <p><strong>Call:</strong> +1 555 010 2026</p>
+      <p><strong>Email:</strong> hello@savorygarden.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
